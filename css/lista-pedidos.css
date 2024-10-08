@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #1d1e9f;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 30px; /* Aumenta o espaçamento entre os itens do menu */
+    font-size: 20px; /* Aumenta o tamanho das letras */
+    text-decoration: none;
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.pedido-container {
+    width: 80%; /* Aumentei a largura da página */
+    background-color: #fff;
+    padding: 30px; /* Aumentei o padding */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra mais destacada */
+}
+
+.novo-pedido {
+    background-color: #1d1e9f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.novo-pedido:hover {
+    background-color: #15166d;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #333; /* Cor escura para toda a tabela */
+    color: white;
+}
+
+table thead {
+    background-color: #555;
+    color: white;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #555; /* Bordas mais claras */
+}
+
+table tbody tr {
+    background-color: #444; /* Mantém a tabela escura para as linhas */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #555; /* Cor alternada mais clara */
+}
+
+.edit-btn, .delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.edit-btn:hover {
+    color: #007bff;
+}
+
+.delete-btn:hover {
+    color: #ff4d4d;
+}
+
+@media (max-width: 768px) {
+    .pedido-container {
+        width: 100%;
+        padding: 10
+    }
+}

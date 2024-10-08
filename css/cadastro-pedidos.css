@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #1d1e9f;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 80px; /* Aumentei o espaçamento entre CLIENTE, CARROS e PEDIDOS */
+    font-size: 20px;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.titulo {
+    font-size: 24px;
+    margin-bottom: 20px; /* Espaçamento para separar o título do formulário */
+}
+
+.cadastro-container {
+    width: 50%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    font-size: 16px;
+}
+
+input:disabled {
+    background-color: #eaeaea;
+}
+
+.btn-cadastrar {
+    background-color: #1d1e9f;
+    color: white;
+    border: none;
+    padding: 10px 40px; /* Diminuí o padding horizontal para deixar o botão mais curto */
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: fit-content; /* Faz o botão ajustar sua largura conforme o texto */
+    margin: 0 auto; /* Centraliza o botão */
+}
+
+.btn-cadastrar:hover {
+    background-color: #15166d;
+}
+
+@media (max-width: 768px) {
+    .cadastro-container {
+        width: 90%;
+    }
+
+    header nav a {
+        margin: 0 20px;
+        font-size: 16px;
+    }
+}

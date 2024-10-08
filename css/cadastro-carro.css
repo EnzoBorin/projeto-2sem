@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #1a1a8a;
+    padding: 30px 0; /* Deixar a barra mais grossa */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px; /* Aumentar o espaçamento entre os itens */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; /* Aumentar o tamanho da fonte */
+    font-weight: normal; /* Remover o negrito */
+}
+
+/* Container do título fora do formulário */
+.title-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilo do formulário */
+.container {
+    background-color: white;
+    width: 60%; /* Aumentar o tamanho do layout */
+    margin: 0 auto;
+    padding: 40px; /* Aumentar o espaçamento interno */
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+}
+
+label {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 15px;
+    background-color: #1a1a8a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 40%; /* Encurtar o botão */
+    margin: 0 auto; /* Centralizar o botão */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3333ff;
+}

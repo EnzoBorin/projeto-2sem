@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.top-bar {
+    background-color: #2e0073;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0; /* Grossura da barra */
+    font-size: 18px;
+}
+
+.menu-item {
+    flex: 1;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 80px); /* Altura restante após a barra superior */
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section {
+    flex-direction: column;
+    background-color: white; /* Corrigido para branco */
+    padding: 20px;
+}
+
+.logo {
+    margin-bottom: 20px; /* Ajustar a logo mais para cima */
+    margin-top: -40px; /* Levantar a logo mais */
+    text-align: center;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 28px; /* Aumentar o tamanho das letras */
+    font-weight: normal; /* Remover negrito do texto */
+}
+
+.welcome-text p {
+    font-size: 22px; /* Aumentar o parágrafo */
+    font-weight: normal; /* Remover negrito do parágrafo */
+}
+
+.right-section {
+    background-color: #ffffff; /* Ajustar o fundo para branco */
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.car-image {
+    width: auto;
+    height: auto;
+    background-color: transparent; /* Remover o fundo do quadrado */
+    margin: 20px;
+}
+
+.car-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ajustar a imagem sem distorcer */
+}
